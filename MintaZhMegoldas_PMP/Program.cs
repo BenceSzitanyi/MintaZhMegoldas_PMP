@@ -22,7 +22,9 @@ namespace MintaZhMegoldas_PMP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Dataset ds = new Dataset("netflix_data.csv");
+            string a = ds.DistributionOfDeviceType(DeviceType.Laptop);
+            Console.WriteLine(a);
         }
     }
 }
